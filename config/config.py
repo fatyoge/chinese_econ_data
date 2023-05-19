@@ -100,3 +100,27 @@ class House_70cities:
             '2023-03': {'url': 'http://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202304/t20230415_1938662.html', '新建商品住宅销售价格指数':{ 'restruct': 1, 'tbl_index': [0], 'skip_row': 1, 'header': ['城市','环比','同比','比2020年']} , '二手住宅销售价格指数':{ 'restruct': 1, 'tbl_index': [1], 'skip_row': 0, 'header': ['城市','环比','同比','比2020年']} , '新建商品住宅销售价格分类指数':{ 'tbl_index': [2,3], 'skip_row': 2, 'header': ['城市','环比[90]','同比[90]','比2020年[90]','环比[90-144]','同比[90-144]','比2020年[90-144]','环比[144]','同比[144]','比2020年[144]']} , '二手住宅销售价格分类指数':{ 'tbl_index': [4,5], 'skip_row': 2, 'header': ['城市','环比[90]','同比[90]','比2020年[90]','环比[90-144]','同比[90-144]','比2020年[90-144]','环比[144]','同比[144]','比2020年[144]']}},
         }
     local_path = r'raw_data\House_70cities'
+
+# class PCB_Financing_Real_Econ_Flow:
+#     desc_cn = "社会融资规模增量统计"
+#     desc_en = "PCB_AFRE_Flow"
+#     param = {
+#         '2023': {'url':'http://www.pbc.gov.cn/diaochatongjisi/resource/cms/2023/05/2023051517410927250.xlsx'}
+#     }
+#     local_path = r'raw_data\PBC'
+
+
+class PCB_Financing_Data:
+    desc_cn = "2023年中国人民银行统计数据"
+    desc_en = "2023_PBC_Data"
+    param = {
+        '2023': {'url':'http://www.pbc.gov.cn/diaochatongjisi/116219/116319/4780803/index.html'},
+        '2022': {'url':'http://www.pbc.gov.cn/diaochatongjisi/116219/116319/4458449/index.html'},
+        '2021': {'url':'http://www.pbc.gov.cn/diaochatongjisi/116219/116319/4184109/index.html'},
+        '2020': {'url':'http://www.pbc.gov.cn/diaochatongjisi/116219/116319/3959050/index.html'},
+        '2019': {'url':'http://www.pbc.gov.cn/diaochatongjisi/116219/116319/3750274/index.html'},
+        '2018': {'url':'http://www.pbc.gov.cn/diaochatongjisi/116219/116319/3471721/index.html'},
+        '2017': {'url':'http://www.pbc.gov.cn/diaochatongjisi/116219/116319/3245697/index.html'},
+        '2016': {'url':'http://www.pbc.gov.cn/diaochatongjisi/116219/116319/3013637/index.html'},
+    }
+    local_path = r'raw_data\PBC'
